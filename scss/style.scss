@@ -1,0 +1,17 @@
+/* reset */ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "html/home";
+
+@import "html/areas";
+
+@import "html/staff";
+
+@import "html/revista";
+
+@import "html/contacto";

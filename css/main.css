@@ -1,0 +1,192 @@
+@charset "UTF-8";
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.areas h1, .socios h1, .revista h1, .pagInteres h2, .contacto h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+body {
+  background-color: #B4CFB0;
+  /* estilos de menu */
+  /*estilos de los títulos principales*/
+  /*estilos del footer*/
+  /* estilos del index*/ }
+  body .colorTitle {
+    color: #557174; }
+  body .colorMenu {
+    color: #557174; }
+    body .colorMenu:hover {
+      color: #557174;
+      border-bottom: 2px solid #557174; }
+  body h1 {
+    color: #557174;
+    text-decoration: overline; }
+  body footer {
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    color: #557174; }
+    body footer div a {
+      color: #557174;
+      text-decoration: none; }
+  body .descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background: url(../img/martillo.jpg) center;
+    background-size: cover; }
+    body .descripcion h1 {
+      font-size: 1.1rem;
+      text-align: center;
+      color: #B4CFB0;
+      border: 1px solid #B4CFB0;
+      box-shadow: 0 0 10px #222;
+      backdrop-filter: blur(15px);
+      margin: 5rem;
+      padding: 2em; }
+  body section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 25% 25%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em; }
+    body section .compromiso {
+      background-color: #789395;
+      height: 650px;
+      padding: 3em;
+      gap: 20px;
+      font-size: 1em;
+      justify-content: center;
+      align-items: center; }
+      body section .compromiso h2 {
+        text-decoration: overline;
+        text-shadow: 10px #222;
+        text-align: left;
+        color: whitesmoke; }
+      body section .compromiso p {
+        text-align: justify;
+        text-decoration: dashed;
+        margin-bottom: 30px;
+        color: whitesmoke;
+        font-size: 1rem;
+        overflow: visible; }
+    body section .imgDos {
+      display: none; }
+    body section .visionValores {
+      background-color: #94AF9F;
+      height: 400px;
+      margin: 1.5em;
+      padding: 2em;
+      gap: 20px;
+      font-size: 1em;
+      text-align: center;
+      justify-content: center; }
+      body section .visionValores h3 {
+        color: white;
+        margin-right: 3rem;
+        text-transform: uppercase;
+        text-align: right; }
+      body section .visionValores p {
+        text-align: justify;
+        color: white; }
+
+.areas h1, .socios h1, .revista h1, .pagInteres h2, .contacto h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+/* estilos de areas */
+.areas {
+  justify-content: center;
+  align-items: center; }
+  .areas h1 {
+    text-align: left; }
+  .areas h2 {
+    color: #557174;
+    padding: 15px;
+    margin: 15px;
+    text-decoration: overline #DBE4C6;
+    text-align: end; }
+  .areas p {
+    display: none;
+    color: #0A4D68; }
+
+.areas h1, .socios h1, .revista h1, .pagInteres h2, .contacto h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+/* estilos de staff */
+.socios {
+  text-align: center;
+  padding: 30px;
+  color: #789395; }
+  .socios h1 {
+    text-align: left; }
+  .socios .cuadro {
+    border-style: double;
+    margin: 10px;
+    padding: 10px; }
+    .socios .cuadro img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .socios .cuadro div h2 {
+      text-transform: uppercase;
+      margin-top: 1rem; }
+    .socios .cuadro div p {
+      text-align: justify; }
+
+.areas h1, .socios h1, .revista h1, .pagInteres h2, .contacto h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+/* estilos de revista */
+.revista {
+  margin: 0.3rem;
+  padding: 0.3rem; }
+
+.pagInteres {
+  color: #728378;
+  padding: 0.8rem;
+  display: inline-block; }
+  .pagInteres h2 {
+    text-decoration: overline; }
+  .pagInteres div a {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    color: #0A4D68;
+    text-decoration: none;
+    margin-top: 20px; }
+    .pagInteres div a:visited {
+      color: #728378; }
+
+.areas h1, .socios h1, .revista h1, .pagInteres h2, .contacto h1 {
+  text-transform: uppercase;
+  margin: 0.2rem;
+  padding: 0.2rem; }
+
+/* estilos de contacto */
+.contacto {
+  text-align: center; }
+  .contacto h1 {
+    text-align: left;
+    font-size: 1.5rem; }
+  .contacto form {
+    margin-top: 2rem; }
+    .contacto form .formulario div label {
+      color: whitesmoke;
+      display: block; }
+    .contacto form .formulario div input {
+      width: 15rem;
+      height: 2rem; }
+    .contacto form .formulario div #consulta {
+      height: 20rem; }

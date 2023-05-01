@@ -1,0 +1,35 @@
+// import de utilidades
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos de revista */
+.revista{
+    margin: 0.3rem;
+    padding: 0.3rem;
+    h1{
+        @extend %mayus;
+    }
+}
+
+.pagInteres{
+    color: $color-visited;
+    padding: 0.8rem;
+    display: inline-block;
+    h2{
+        text-decoration: overline;
+        @extend %mayus;
+    }
+    div{
+        a{
+            padding: 1rem;
+            margin-bottom: 2rem;
+            color: $color-links;
+            text-decoration: none;
+            margin-top: 20px;
+            &:visited{
+                color: $color-visited;
+            }
+        }
+    }
+}

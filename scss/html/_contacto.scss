@@ -1,0 +1,33 @@
+// import de utilidades
+
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos de contacto */
+.contacto{
+    text-align: center;
+    h1{
+        @extend %mayus;
+        text-align: left;
+        font-size: 1.5rem;
+    }
+    form{
+        margin-top: 2rem;
+        .formulario{
+            div{
+                label{
+                    color: whitesmoke;
+                    display: block;
+                }
+                input{
+                    width: 15rem;
+                    height: 2rem;
+                }
+                #consulta{
+                    height: 20rem;
+                }
+            }
+        }
+    }
+}

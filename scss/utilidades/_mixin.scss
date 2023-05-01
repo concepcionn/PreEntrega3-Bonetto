@@ -1,0 +1,25 @@
+@import "../utilidades/vars";
+
+// centrado
+@mixin center{
+    justify-content: center;
+    align-items: center;
+}
+
+//footer
+@mixin footer{
+    text-align: center;
+    padding: 15px;
+    margin: 15px;
+    color: $color-principal;
+}
+
+//estilos de section
+@mixin grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 25% 25%;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2em;
+}

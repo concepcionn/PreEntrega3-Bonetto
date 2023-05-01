@@ -1,0 +1,24 @@
+// import de utilidades
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+/* estilos de areas */
+.areas{
+    @include center;
+    h1{
+        text-align: left;
+        @extend %mayus;
+    }
+    h2{
+        color: $color-principal;
+        padding: 15px;
+        margin: 15px;
+        text-decoration: overline $color-overa;
+        text-align: end;
+    }
+    p{
+        display: none;
+        color: $color-links;
+    }
+}

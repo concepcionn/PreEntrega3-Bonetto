@@ -1,0 +1,107 @@
+@import "../utilidades/vars";
+@import "../utilidades/mixin";
+@import "../utilidades/extend";
+
+body{
+    background-color: $bg-color;
+    /* estilos de menu */
+    .colorTitle{
+        color: $color-principal;
+    }
+
+    .colorMenu{
+        color: $color-principal;
+        &:hover{
+            color: $color-principal;
+            border-bottom: 2px solid $color-principal;
+        }
+    }
+
+    /*estilos de los títulos principales*/ 
+    h1{
+        color: $color-principal;
+        text-decoration: overline;
+    }
+
+    /*estilos del footer*/
+    footer{
+        @include footer;
+        div{
+            a{
+                color: $color-principal;
+                text-decoration: none;
+            }
+        }
+    }
+
+     /* estilos del index*/
+     .descripcion{
+        display: flex;
+        @include center;
+        height: 50vh;
+        background: url(../img/martillo.jpg) center;
+        background-size: cover;
+        h1{
+            font-size: 1.1rem;
+            text-align: center;
+            color: $bg-color;
+            border: 1px solid $bg-color;
+            box-shadow: 0 0 10px #222;
+            backdrop-filter: blur(15px);
+            margin: 5rem;
+            padding: 2em;
+        }
+    }
+
+    section{
+        @include grid;
+        .compromiso{
+            background-color: $color-secundario;
+            height: 650px;
+            
+            padding: 3em;
+            gap: 20px;
+            font-size: 1em;
+            @include center;
+            h2{
+                text-decoration: overline;
+                text-shadow: 10px #222;
+                text-align: left;
+                color: whitesmoke;
+            }
+            p{
+                text-align: justify;
+                text-decoration: dashed;
+                margin-bottom: 30px;
+                color: whitesmoke;
+                font-size: 1rem;
+                overflow: visible;
+            }
+        }
+
+        .imgDos{
+            display: none;
+        }
+
+        .visionValores{
+            background-color: $color-vision;
+            height: 400px;
+            margin: 1.5em;
+            padding: 2em;
+            gap: 20px;
+            font-size: 1em;
+            text-align: center;
+            justify-content: center;
+            h3{
+                color: white;
+                margin-right: 3rem;
+                text-transform: uppercase;
+                text-align: right;
+            }
+            p{
+                text-align: justify;
+                color: white;
+            }
+        }
+    }
+}
