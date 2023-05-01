@@ -11,6 +11,9 @@
         @extend %mayus;
         text-align: left;
         font-size: 1.5rem;
+        @include tablet{
+            font-size: 2rem;
+        }
     }
     form{
         margin-top: 2rem;
@@ -23,6 +26,10 @@
                 input{
                     width: 15rem;
                     height: 2rem;
+                    @include tablet{
+                        width: 30rem;
+                        height: 3rem;
+                    }
                 }
                 #consulta{
                     height: 20rem;

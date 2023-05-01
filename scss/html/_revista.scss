@@ -1,4 +1,6 @@
 // import de utilidades
+
+@import "../utilidades/mq";
 @import "../utilidades/vars";
 @import "../utilidades/mixin";
 @import "../utilidades/extend";
@@ -9,6 +11,19 @@
     padding: 0.3rem;
     h1{
         @extend %mayus;
+    }
+    .contPadre{
+        .contHijo{
+            .hijodelHijo{
+                .captionColor{
+                    color: white;
+                    text-decoration: solid;
+                    border: 1px solid rgb(145, 153, 160);
+                    box-shadow: 0 0 10px #222;
+                    backdrop-filter: blur(15px);
+                }
+            }
+        }
     }
 }
 

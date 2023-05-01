@@ -41,15 +41,24 @@ body {
     height: 50vh;
     background: url(../img/martillo.jpg) center;
     background-size: cover; }
+    @media screen and (min-width: 600px) {
+      body .descripcion {
+        height: 600px; } }
     body .descripcion h1 {
-      font-size: 1.1rem;
-      text-align: center;
+      text-decoration: none;
+      font-size: 1.4rem;
+      justify-content: center;
+      align-items: center;
       color: #B4CFB0;
       border: 1px solid #B4CFB0;
       box-shadow: 0 0 10px #222;
       backdrop-filter: blur(15px);
-      margin: 5rem;
-      padding: 2em; }
+      margin: 3rem;
+      padding: 1.4em; }
+      @media screen and (min-width: 600px) {
+        body .descripcion h1 {
+          text-transform: uppercase;
+          margin: 6.5rem; } }
   body section {
     display: grid;
     grid-template-columns: 1fr;
@@ -57,14 +66,21 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0.2em; }
+    @media screen and (min-width: 600px) {
+      body section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 40%); } }
     body section .compromiso {
       background-color: #789395;
-      height: 650px;
+      height: 500px;
       padding: 3em;
       gap: 20px;
       font-size: 1em;
       justify-content: center;
       align-items: center; }
+      @media screen and (min-width: 600px) {
+        body section .compromiso {
+          grid-column: span 2; } }
       body section .compromiso h2 {
         text-decoration: overline;
         text-shadow: 10px #222;
@@ -79,6 +95,14 @@ body {
         overflow: visible; }
     body section .imgDos {
       display: none; }
+      @media screen and (min-width: 600px) {
+        body section .imgDos {
+          display: inline-block;
+          grid-column: span 1;
+          text-align: center; }
+          body section .imgDos img {
+            width: 80%;
+            height: 80%; } }
     body section .visionValores {
       background-color: #94AF9F;
       height: 400px;
@@ -88,6 +112,9 @@ body {
       font-size: 1em;
       text-align: center;
       justify-content: center; }
+      @media screen and (min-width: 600px) {
+        body section .visionValores {
+          grid-column: span 1; } }
       body section .visionValores h3 {
         color: white;
         margin-right: 3rem;
@@ -114,9 +141,17 @@ body {
     margin: 15px;
     text-decoration: overline #DBE4C6;
     text-align: end; }
+    @media screen and (min-width: 600px) {
+      .areas h2 {
+        text-align: right; } }
   .areas p {
     display: none;
     color: #0A4D68; }
+    @media screen and (min-width: 600px) {
+      .areas p {
+        display: inline-block;
+        padding: 1.3em;
+        border-bottom: 0.8px dashed whitesmoke; } }
 
 .areas h1, .socios h1, .revista h1, .pagInteres h2, .contacto h1 {
   text-transform: uppercase;
@@ -134,10 +169,20 @@ body {
     border-style: double;
     margin: 10px;
     padding: 10px; }
+    @media screen and (min-width: 600px) {
+      .socios .cuadro {
+        display: flex;
+        flex-wrap: no-wrap;
+        gap: 1em;
+        justify-content: center;
+        align-items: center; } }
     .socios .cuadro img {
       width: 100%;
       height: 100%;
       object-fit: cover; }
+    @media screen and (min-width: 600px) {
+      .socios .cuadro div {
+        text-align: left; } }
     .socios .cuadro div h2 {
       text-transform: uppercase;
       margin-top: 1rem; }
@@ -153,6 +198,12 @@ body {
 .revista {
   margin: 0.3rem;
   padding: 0.3rem; }
+  .revista .contPadre .contHijo .hijodelHijo .captionColor {
+    color: white;
+    text-decoration: solid;
+    border: 1px solid #9199a0;
+    box-shadow: 0 0 10px #222;
+    backdrop-filter: blur(15px); }
 
 .pagInteres {
   color: #728378;
@@ -180,6 +231,9 @@ body {
   .contacto h1 {
     text-align: left;
     font-size: 1.5rem; }
+    @media screen and (min-width: 600px) {
+      .contacto h1 {
+        font-size: 2rem; } }
   .contacto form {
     margin-top: 2rem; }
     .contacto form .formulario div label {
@@ -188,5 +242,9 @@ body {
     .contacto form .formulario div input {
       width: 15rem;
       height: 2rem; }
+      @media screen and (min-width: 600px) {
+        .contacto form .formulario div input {
+          width: 30rem;
+          height: 3rem; } }
     .contacto form .formulario div #consulta {
       height: 20rem; }

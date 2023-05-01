@@ -1,3 +1,6 @@
+// import de utilidades
+
+@import "../utilidades/mq";
 @import "../utilidades/vars";
 @import "../utilidades/mixin";
 @import "../utilidades/extend";
@@ -41,28 +44,43 @@ body{
         height: 50vh;
         background: url(../img/martillo.jpg) center;
         background-size: cover;
+        @include tablet{
+            height: 600px;
+        }
         h1{
-            font-size: 1.1rem;
-            text-align: center;
+            text-decoration: none;
+            font-size: 1.4rem;
+            @include center;
             color: $bg-color;
             border: 1px solid $bg-color;
             box-shadow: 0 0 10px #222;
             backdrop-filter: blur(15px);
-            margin: 5rem;
-            padding: 2em;
+            margin: 3rem;
+            padding: 1.4em;
+
+            @include tablet{
+                text-transform: uppercase;
+                margin: 6.5rem;
+            }
         }
     }
 
     section{
         @include grid;
+        @include tablet{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 40%);
+            }
         .compromiso{
             background-color: $color-secundario;
-            height: 650px;
-            
+            height: 500px;
             padding: 3em;
             gap: 20px;
             font-size: 1em;
             @include center;
+            @include tablet{
+                grid-column: span 2;
+            }
             h2{
                 text-decoration: overline;
                 text-shadow: 10px #222;
@@ -81,6 +99,15 @@ body{
 
         .imgDos{
             display: none;
+            @include tablet{
+                display: inline-block;
+                grid-column: span 1;
+                text-align: center;
+                img{
+                    width: 80%;
+                    height: 80%;
+                }
+            }
         }
 
         .visionValores{
@@ -92,6 +119,9 @@ body{
             font-size: 1em;
             text-align: center;
             justify-content: center;
+            @include tablet{
+                grid-column: span 1;
+            }
             h3{
                 color: white;
                 margin-right: 3rem;

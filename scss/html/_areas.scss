@@ -1,4 +1,6 @@
 // import de utilidades
+
+@import "../utilidades/mq";
 @import "../utilidades/vars";
 @import "../utilidades/mixin";
 @import "../utilidades/extend";
@@ -16,9 +18,17 @@
         margin: 15px;
         text-decoration: overline $color-overa;
         text-align: end;
+        @include tablet{
+            text-align: right;
+        }
     }
     p{
         display: none;
         color: $color-links;
+        @include tablet{
+            display: inline-block;
+            padding: 1.3em;
+            border-bottom: 0.8px dashed whitesmoke;
+        }
     }
 }
